@@ -41,7 +41,7 @@ export default function Home() {
     <main style={{ marginTop: '10px' }}>
       <img className='dailyLogo' src='/dailyd.jpeg' alt="Daily Dose Logo" />
       <div style={{ display: 'block' }}>
-        <h1 className='titoloDaily'>GUIDO BORDO DAILY DOSE 2025</h1>
+        <h1 className='titoloDaily'>GUIDO BORSO DAILY DOSE 2025</h1>
         <h2 className='sottoTitoloDaily'>One year of everyday life pictures</h2>
       </div>
       {progetti.map((progetto) => (
