@@ -79,7 +79,7 @@ export default function Home() {
         onRequestClose={closeModal}
         style={{
           overlay: {
-            backgroundColor: 'rgba(237, 237, 237, 0.8)',
+            backgroundColor: 'rgb(237 237 237 / 96%)',
           },
           content: {
             top: '50%',
