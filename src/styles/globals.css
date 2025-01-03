@@ -66,6 +66,17 @@ display: grid;
 
 }
 
+.dailydoseDiv{
+ /* display: flex
+; */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 1vW;
+}
+
 .titoloDaily{
   color:black;
   padding:45px;
@@ -110,8 +121,15 @@ display: grid;
   height: auto;
   margin: 0px;
   padding-left: 45px;
-  padding-right: 0;
+  padding-right: 45px;
   padding-bottom:75px
+}
+
+.dailyPostImage{
+  width:90%;
+   margin-right: 20px;
+    object-fit: cover;
+     cursor: pointer
 }
 
 .card-inner {
@@ -233,6 +251,12 @@ display: grid;
     font-size:40px;
     line-height: 1;
   }
+
+  .dailydoseDiv{
+    display: block;
+    gap: 15px;
+  }
+
   .sottoTitoloDaily{
     color:black;
     padding:15px;
@@ -250,8 +274,16 @@ display: grid;
   .dailyPost{
     height: auto;
     margin: 0px;
-    padding-left: 15px;
+    padding-left: 3vW;
     padding-right: 0;
     padding-bottom:75px
+  }
+
+  .dailyPostImage{
+    width: 94vW;
+    margin-bottom: 15px;
+    height: auto;
+      object-fit: cover;
+       cursor: pointer
   }
 }

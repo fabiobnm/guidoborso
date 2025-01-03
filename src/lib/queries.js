@@ -17,6 +17,21 @@ export const GET_POSTS = gql`
   }
 `;
 
+export const GET_POSTSDailyDose2025DEF = gql`
+  query {
+   dailyDose2025S {
+     id
+    gallery(first: 370, orderBy: id_DESC){
+      id
+      
+        url
+      
+      
+    }
+   }  
+}
+`;
+
 export const GET_POSTSDailyDose2025 = gql`
   query {
    dailyDose2025S {
