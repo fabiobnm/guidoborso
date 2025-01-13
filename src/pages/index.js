@@ -21,22 +21,23 @@ export default function Home() {
     return <p>Error: {error.message}</p>;
   }
 
-  console.log('Dati ricevuti:', data);
+  console.log('Dati ricevuti:', data.homePages[0].cover);
 
   return (
     <main style={{marginTop:'125px',background:''}}>
-      <h1>dghkj</h1>
-      {data.homePages.map((cover) => (
-        <div style={{height:'auto', margin:'0px'}} key={cover.id}>
-          <h1>dfgkjdh</h1>
-            <img
+    <div style={{height:'auto', margin:'0px',display:'flex'}} >
+
+      {data.homePages[0].cover.map((cover) => (
+         
+            <img 
+                key={cover.id}
                 src={cover.url}
-                style={{  width: '150px',height:'fit-content', margin:'auto',marginRight : '15px' }} // Stile per le immagini della galleria
+                style={{  width: '35vW',height:'fit-content', margin:'auto' }} // Stile per le immagini della galleria
             />       
 
-        </div>
+      
       ))}
-
+  </div>
 
       <Sidebar />
       <NewsButt />

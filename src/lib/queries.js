@@ -16,6 +16,14 @@ export const GET_POSTS = gql`
     }
   }
 `;
+export const GET_POSTSHomePage = gql`
+query{
+  homePages{
+    cover{url}
+  }
+}
+`;
+
 
 export const GET_POSTSDailyDose2025DEF = gql`
   query {
