@@ -32,7 +32,7 @@ export default function Home() {
             <img 
                 key={cover.id}
                 src={cover.url}
-                style={{  width: '35vW',height:'fit-content', margin:'auto' }} // Stile per le immagini della galleria
+                style={{  width: '45vW',height:'fit-content', margin:'auto' }} // Stile per le immagini della galleria
             />       
 
       

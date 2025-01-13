@@ -16,6 +16,18 @@ export const GET_POSTS = gql`
     }
   }
 `;
+
+export const GET_POSTSAbout = gql`
+query {
+  abouts {
+    bio
+    immagine{
+      url
+    }
+  }
+}
+`;
+
 export const GET_POSTSHomePage = gql`
 query{
   homePages{

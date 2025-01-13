@@ -1,12 +1,12 @@
 import { useQuery } from '@apollo/client';
 import client from '../lib/apolloClient';
-import { GET_POSTS } from '../lib/queries';
+import { GET_POSTSAbout } from '../lib/queries';
 import Sidebar from '../components/Sidebar'; 
 import NewsButt from '../components/tastoNews';
 
 
 export default function Home() {
-  const { loading, error, data } = useQuery(GET_POSTS, { client });
+  const { loading, error, data } = useQuery(GET_POSTSAbout, { client });
 
   if (loading) return <p>Loading...</p>;
   if (error) {
@@ -20,19 +20,27 @@ export default function Home() {
     return <p>Error: {error.message}</p>;
   }
 
-  console.log('Dati ricevuti:', data);
+  console.log('Dati ricevuti:', data.abouts[0]);
 
   return (
     <main>
-      <h1>BIO</h1>
+
+      <div>
+      <img style={{
+      color: 'black',
+      width: '40vw',
+      marginTop: '20vH',
+      position: 'absolute',
+      left: '9vW',
+     }} src={ data.abouts[0].immagine.url}/>
      <p style={{
       color: 'black',
       width: '30vw',
       marginTop: '20vH',
       position: 'absolute',
       right: '9vW',
-     }}>Born in 1990 in Milano, where he lives and works.  After the art school diploma, he attended the Bauer photography school and the Civica Scuola del Cinema. Through photography, Guido Borso explores how humanity lives within society and adapts to it, and at the same time how it relates with the outside world, working (when possible) in the emotional sphere of the people he meets. He currently works as a freelance photographer and his shots were published on D-la Repubblica, Rivista Studio, Vision, Flash Art, Grossomondo, Vice and other underground and commercial magazines.</p>
-
+     }}>{data.abouts[0].bio}</p>
+    </div>
 <Sidebar />
 <NewsButt />
 
