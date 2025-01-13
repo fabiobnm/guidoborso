@@ -26,13 +26,13 @@ const styles = {
     paddingRight: '45px',
     paddingTop: '20px',
     position: 'fixed',
-    bottom: '0%',
+    bottom: '5%',
     right:'0px'
   },
   news:{
 backgroundColor:'#002fa7',
-padding:'25px',
-fontSize:'30px',
+padding:'5px',
+fontSize:'25px',
   },
   
 };

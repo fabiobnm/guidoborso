@@ -51,7 +51,7 @@ export default function Home() {
           style={{ height: 'auto', margin: '0px', paddingLeft: '45px', paddingRight: '45px' }}
           key={progetto.id}
         >
-          <h1 style={{ color: 'black', fontSize: '28px', textAlign: 'center', padding: '50px' }}>
+          <h1 style={{ color: 'black', fontSize: '20px', textAlign: 'center', padding: '50px' }}>
             {progetto.nome}
           </h1>
 
