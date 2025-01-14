@@ -35,9 +35,8 @@ const Sidebar = () => {
   }, [lastScrollPos]);
 
   return (
-    <aside
+    <aside className='asideHeader'
       style={{
-        ...styles.sidebar,
         top: isVisible ? '0' : '-100px', // Nascondi mostrando fuori schermo
         transition: 'top 0.3s ease-in-out', // Animazione fluida
       }}

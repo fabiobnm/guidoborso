@@ -268,6 +268,17 @@ list-style-type: none;
     padding-right: 45px;
 }
 
+.asideHeader{
+  width: 100%;
+  background-color: white;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 20px;
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+  transition: top 0.3s ease-in-out;
+}
 
 
 /* Media query per smartphone (max-width 768px) */
@@ -289,6 +300,14 @@ list-style-type: none;
     font-size:40px;
     line-height: 1;
   }
+
+
+.asideHeader{
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+ 
+}
 
 .caros{
   
