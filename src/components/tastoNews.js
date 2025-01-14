@@ -6,7 +6,7 @@ const NewsButt = () => {
   const router = useRouter(); // Ottieni il percorso attuale
 
   return (
-    <div style={styles.gigio}>
+    <div className='dailyButton'>
        <Link 
               href="/dailydose2025"
               style={styles.news}
@@ -31,6 +31,7 @@ const styles = {
   },
   news:{
 backgroundColor:'#002fa7',
+color:'white',
 padding:'5px',
 fontSize:'25px',
   },

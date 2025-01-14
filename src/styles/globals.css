@@ -279,6 +279,18 @@ list-style-type: none;
   z-index: 10;
   transition: top 0.3s ease-in-out;
 }
+.menuOpenMobile li{
+  margin-bottom: 10px;
+}
+.dailyButton{
+  width: auto;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 20px;
+    position: fixed;
+    bottom: 5%;
+    right: 0px;
+}
 
 
 /* Media query per smartphone (max-width 768px) */
@@ -307,6 +319,16 @@ list-style-type: none;
   padding-left: 1rem;
   padding-right: 1rem;
  
+}
+
+.dailyButton{
+  width: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 20px;
+    position: fixed;
+    bottom: 1rem;
+    right: 0px;
 }
 
 .caros{
