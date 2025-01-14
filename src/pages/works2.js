@@ -47,8 +47,7 @@ export default function Home() {
   return (
     <main style={{ marginTop: '75px' }}>
       {data.progettis.map((progetto) => (
-        <div
-          style={{ height: 'auto', margin: '0px', paddingLeft: '45px', paddingRight: '45px' }}
+        <div className='projectDivWork'
           key={progetto.id}
         >
           <h1 style={{ color: 'black', fontSize: '20px', textAlign: 'center', padding: '50px' }}>

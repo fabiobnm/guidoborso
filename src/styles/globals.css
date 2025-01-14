@@ -78,7 +78,9 @@ display: grid;
     align-items: center;
     row-gap: 1vW;
 }
-
+.headerDesktop{
+  
+}
 .titoloDaily{
   color:black;
   padding:45px;
@@ -241,12 +243,44 @@ display: grid;
 :focus-visible {
   outline: none;
 }
+.headerDesktop{
+  list-style-type: none;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+list-style-type: none;
+    padding: 0px;
+    display: flex
+;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.headerMobile{
+  display: none;
+}
+.projectDivWork{
+  height: auto;
+    margin: 0px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
 
 
 
 /* Media query per smartphone (max-width 768px) */
 @media only screen and (max-width: 768px) {
-
+  .headerMobile{
+    display: block;
+  }
+  .projectDivWork{
+    height: auto;
+      margin: 0px;
+      padding-left: 1rem;
+      padding-right: 1rem;
+  }
   .titoloDaily{
     color:black;
     padding:15px;
@@ -258,7 +292,7 @@ display: grid;
 
 .caros{
   
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
   
   }
@@ -296,5 +330,9 @@ display: grid;
     height: auto;
       object-fit: cover;
        cursor: pointer
+  }
+  .headerDesktop{
+    
+  display: none;
   }
 }

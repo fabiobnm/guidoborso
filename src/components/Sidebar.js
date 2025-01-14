@@ -8,6 +8,7 @@ const Sidebar = () => {
   const [lastScrollPos, setLastScrollPos] = useState(0); // Ultima posizione di scroll
   const [hoverText, setHoverText] = useState("Commissions"); // Stato per gestire il testo
   const [hoverText2, setHoverText2] = useState("Educational"); // Stato per gestire il testo
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // Stato per il menu mobile
 
 
   useEffect(() => {
@@ -17,6 +18,7 @@ const Sidebar = () => {
       if (currentScrollPos > lastScrollPos && currentScrollPos > 50) {
         // Nascondi quando si scrolla verso il basso
         setIsVisible(false);
+        setIsMobileMenuOpen(false)
       } else {
         // Mostra quando si scrolla verso l'alto
         setIsVisible(true);
@@ -40,7 +42,7 @@ const Sidebar = () => {
         transition: 'top 0.3s ease-in-out', // Animazione fluida
       }}
     >
-      <ul style={styles.ul}>
+      <ul className='headerDesktop' >
         {/* Guido Borso a sinistra */}
         <li style={styles.left}>
           <Link className='vociMenuHeader' href="/" style={router.pathname === '/' ? styles.linkHome : styles.linkHome}>
@@ -94,6 +96,41 @@ const Sidebar = () => {
           </Link>
         </li>
       </ul>
+
+      <div className="headerMobile">
+        <Link href="/" style={styles.linkHome}>Guido Borso</Link>
+        
+
+        {/* Bottone per aprire/chiudere il menu */}
+        <button
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          style={{color:'black'}}
+        >
+          {isMobileMenuOpen ? '-' : '+'}
+        </button>
+
+        {/* Mostra/Nasconde il menu mobile */}
+        {isMobileMenuOpen && (
+          <ul className="menuOpenMobile" style={styles.mobileMenu}>
+            <li >
+              
+              <Link  style={{color:'black'}} href="/works2">Works</Link>
+            </li>
+            <li>
+              <Link  style={{color:'black'}} href="/" >Commissions</Link>
+            </li>
+           
+            <li>
+             
+              <Link  style={{color:'black'}} href="/" >educational</Link>
+            </li>
+            <li>
+             
+             <Link  style={{color:'black'}} href="/about" >about</Link>
+           </li>
+          </ul>
+        )}
+      </div>
     </aside>
   );
 };
