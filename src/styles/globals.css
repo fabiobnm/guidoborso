@@ -65,7 +65,9 @@ display: grid;
   gap: 10px;
 
 }
-
+.vociMenuHeader:hover{
+  border-bottom: 1px solid black;
+}
 .dailydoseDiv{
  /* display: flex
 ; */
@@ -81,7 +83,9 @@ display: grid;
   color:black;
   padding:45px;
   padding-bottom:0;
-  font-size:40px
+  font-size:40px;
+  margin-bottom: 10px;
+    line-height: 1;
 }
 .sottoTitoloDaily{
   color:black;

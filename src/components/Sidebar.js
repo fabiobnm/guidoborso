@@ -43,7 +43,7 @@ const Sidebar = () => {
       <ul style={styles.ul}>
         {/* Guido Borso a sinistra */}
         <li style={styles.left}>
-          <Link href="/" style={router.pathname === '/' ? styles.linkHome : styles.linkHome}>
+          <Link className='vociMenuHeader' href="/" style={router.pathname === '/' ? styles.linkHome : styles.linkHome}>
             Guido Borso
           </Link>
         </li>
@@ -51,7 +51,7 @@ const Sidebar = () => {
         {/* Works, Commissions, Educational al centro */}
         <div style={styles.centerContainer}>
           <li>
-            <Link 
+            <Link className='vociMenuHeader'
               href="/works2"
               style={router.pathname === '/works2' ? styles.activeLink : styles.link}
             >
@@ -62,7 +62,7 @@ const Sidebar = () => {
       onMouseEnter={() => setHoverText("Coming Soon")} // Cambia il testo su hover
       onMouseLeave={() => setHoverText("Commissions")} // Ripristina il testo originale
     >
-      <Link
+      <Link className='vociMenuHeader'
         href=""
         style={router.pathname === "/commissions" ? styles.activeLink : styles.link}
       >
@@ -74,7 +74,7 @@ const Sidebar = () => {
       onMouseEnter={() => setHoverText2("ComingSoon")} // Cambia il testo su hover
       onMouseLeave={() => setHoverText2("Educational")} // Ripristina il testo originale
     >
-      <Link
+      <Link className='vociMenuHeader'
         href=""
         style={router.pathname === "/educational" ? styles.activeLink : styles.link}
       >
@@ -86,11 +86,11 @@ const Sidebar = () => {
 
         {/* About a destra */}
         <li style={styles.right}>
-          <Link
+          <Link className='vociMenuHeader'
             href="/about"
             style={router.pathname === '/about' ? styles.activeLink : styles.linkAbout}
           >
-            about
+            About
           </Link>
         </li>
       </ul>
