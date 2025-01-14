@@ -252,6 +252,13 @@ display: grid;
     line-height: 1;
   }
 
+.caros{
+  
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  
+  }
+
   .dailydoseDiv{
     display: block;
     gap: 15px;

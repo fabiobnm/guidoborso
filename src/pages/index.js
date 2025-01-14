@@ -24,8 +24,8 @@ export default function Home() {
   console.log('Dati ricevuti:', data.homePages[0].cover);
 
   return (
-    <main style={{marginTop:'125px',background:''}}>
-    <div style={{height:'auto', margin:'0px',display:'flex'}} >
+    <main style={{marginTop:'0px',background:''}}>
+    <div style={{height:'auto', margin:'0px',display:'flex', marginTop:'50vH', transform:'translateY(-50%)'}} >
 
       {data.homePages[0].cover.map((cover) => (
          
