@@ -25,14 +25,13 @@ export default function Home() {
 
   return (
     <main style={{marginTop:'0px',background:''}}>
-    <div style={{height:'auto', margin:'0px',display:'flex', marginTop:'50vH', transform:'translateY(-50%)'}} >
+    <div className='boxImageHome' >
 
       {data.homePages[0].cover.map((cover) => (
          
-            <img 
+            <img className='imageHome'
                 key={cover.id}
                 src={cover.url}
-                style={{  width: '45vW',height:'fit-content', margin:'auto' }} // Stile per le immagini della galleria
             />       
 
       

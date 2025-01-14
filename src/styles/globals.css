@@ -291,12 +291,26 @@ list-style-type: none;
     bottom: 5%;
     right: 0px;
 }
+.imageHome{
+  width: 45vw;
+    height: auto;
+    margin: auto;
+}
+.boxImageHome{
+  height: auto;
+    margin: 50vh 0px 0px;
+    display: flex;
+    transform: translateY(-50%);
+}
 
 
 /* Media query per smartphone (max-width 768px) */
 @media only screen and (max-width: 768px) {
   .headerMobile{
     display: block;
+  }
+  .boxImageHome{
+      display: block;
   }
   .projectDivWork{
     height: auto;
