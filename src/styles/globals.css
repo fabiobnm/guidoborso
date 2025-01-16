@@ -17,8 +17,8 @@
 body {
   color: var(--foreground);
   background: white;
-  font-family: MyFont;
-  font-weight: 600;}
+  font-family: 'ACaslonPro-Regular';
+}
 
 
 @layer utilities {
