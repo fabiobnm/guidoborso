@@ -135,7 +135,9 @@ display: grid;
   width:90%;
    margin-right: 20px;
     object-fit: cover;
-     cursor: pointer
+     cursor: pointer;
+     max-height: 270px;
+
 }
 
 .card-inner {
@@ -385,7 +387,7 @@ list-style-type: none;
     margin-bottom: 15px;
     height: auto;
       object-fit: cover;
-       cursor: pointer
+       cursor: pointer;
   }
   .headerDesktop{
     
