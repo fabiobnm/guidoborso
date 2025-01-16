@@ -73,7 +73,7 @@ const Sidebar = () => {
 
     <li
       onMouseEnter={() => setHoverText2("ComingSoon")} // Cambia il testo su hover
-      onMouseLeave={() => setHoverText2("Educational")} // Ripristina il testo originale
+      onMouseLeave={() => setHoverText2("Workshop")} // Ripristina il testo originale
     >
       <Link className='vociMenuHeader'
         href=""
@@ -121,7 +121,7 @@ const Sidebar = () => {
            
             <li>
              
-              <Link  style={{color:'black'}} href="/" >educational</Link>
+              <Link  style={{color:'black'}} href="/" >Workshop</Link>
             </li>
             <li>
              
@@ -158,7 +158,6 @@ const styles = {
   },
   centerContainer: {
     display: 'flex',
-    gap: '20px',
     justifyContent: 'center',
     flexGrow: 1,
   },
