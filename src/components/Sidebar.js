@@ -60,26 +60,22 @@ const Sidebar = () => {
             </Link>
           </li>
           <li
-      onMouseEnter={() => setHoverText("Coming Soon")} // Cambia il testo su hover
-      onMouseLeave={() => setHoverText("Commissions")} // Ripristina il testo originale
+     
     >
       <Link className='vociMenuHeader'
         href=""
         style={router.pathname === "/commissions" ? styles.activeLink : styles.link}
       >
-        {hoverText}
+        Commissions
       </Link>
     </li>
 
-    <li
-      onMouseEnter={() => setHoverText2("ComingSoon")} // Cambia il testo su hover
-      onMouseLeave={() => setHoverText2("Workshop")} // Ripristina il testo originale
-    >
+    <li>
       <Link className='vociMenuHeader'
-        href=""
+        href="/educational"
         style={router.pathname === "/educational" ? styles.activeLink : styles.link}
       >
-        {hoverText2}
+        Workshop
       </Link>
     </li>
    

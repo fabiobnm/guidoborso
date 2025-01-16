@@ -6,10 +6,7 @@ export const GET_POSTS = gql`
       id
       nome
       info
-      cover {
-        id
-        url
-      }
+      
       galleria(first: 100) {
         url
       }
