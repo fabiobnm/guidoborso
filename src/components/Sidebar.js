@@ -194,7 +194,7 @@ const styles = {
   },
   activeLink: {
     display: 'block',
-    padding: '5px 20px',
+    padding: '5px 20px ',
     textDecoration: 'none',
     color: 'black',
     fontSize: '20px',

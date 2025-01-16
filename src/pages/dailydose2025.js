@@ -52,7 +52,7 @@ export default function Home() {
   };
 
   return (
-    <main style={{ marginTop: '10px' }}>
+    <main style={{ marginTop: '0px', background:'orange' }}>
       <img className='dailyLogo' src='/dailyd.jpeg' alt="Daily Dose Logo" />
       <div style={{ display: 'block' }}>
         <h1 className='titoloDaily'> <Link href="/">Guido Borso</Link> <br></br>DAILY DOSE 2025</h1>
