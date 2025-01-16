@@ -42,7 +42,6 @@ export default function Home() {
      }}>{data.abouts[0].bio}</p>
     </div>
 <Sidebar />
-<NewsButt />
 
     </main>
   );

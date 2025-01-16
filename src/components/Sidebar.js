@@ -82,9 +82,16 @@ const Sidebar = () => {
         {hoverText2}
       </Link>
     </li>
-          
+   
         </div>
-
+ <li>
+            <Link className='vociMenuHeader'
+              href="/dailydose2025"
+              style={ styles.link}
+            >
+              News
+            </Link>
+          </li>
         {/* About a destra */}
         <li style={styles.right}>
           <Link className='vociMenuHeader'
@@ -126,6 +133,10 @@ const Sidebar = () => {
             <li>
              
              <Link  style={{color:'black'}} href="/about" >about</Link>
+           </li>
+           <li>
+             
+             <Link  style={{color:'black'}} href="/about" >ongoing</Link>
            </li>
           </ul>
         )}

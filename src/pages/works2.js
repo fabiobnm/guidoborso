@@ -82,7 +82,6 @@ export default function Home() {
 
       <Sidebar />
 
-      <NewsButt />
 
       {/* Modal per il carosello */}
       <Modal
