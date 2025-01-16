@@ -192,7 +192,6 @@ const styles = {
     textDecoration: 'none',
     color: 'black',
     fontSize: '20px',
-    fontWeight: 'bold',
     borderBottom: '1px solid',
   },
 
