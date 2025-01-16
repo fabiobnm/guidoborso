@@ -50,7 +50,7 @@ export default function Home() {
         <div className='projectDivWork'
           key={progetto.id}
         >
-          <h1 style={{ color: 'black', fontSize: '20px', textAlign: 'center', padding: '50px' }}>
+          <h1 style={{ color: 'black', fontSize: '20px', padding: '50px' , paddingLeft:'0'}}>
             {progetto.nome}
           </h1>
 
