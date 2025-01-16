@@ -7,7 +7,7 @@ const Sidebar = () => {
   const [isVisible, setIsVisible] = useState(true); // Stato per la visibilità
   const [lastScrollPos, setLastScrollPos] = useState(0); // Ultima posizione di scroll
   const [hoverText, setHoverText] = useState("Commissions"); // Stato per gestire il testo
-  const [hoverText2, setHoverText2] = useState("Educational"); // Stato per gestire il testo
+  const [hoverText2, setHoverText2] = useState("Workshop"); // Stato per gestire il testo
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // Stato per il menu mobile
 
 
