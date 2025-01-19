@@ -116,24 +116,26 @@ const Sidebar = () => {
           <ul className="menuOpenMobile" style={styles.mobileMenu}>
             <li >
               
-              <Link  style={{color:'black'}} href="/works2">Works</Link>
+              <Link  style={{color:'black',fontSize:'20px'}} href="/works2">Works</Link>
             </li>
             <li>
-              <Link  style={{color:'black'}} href="/" >Commissions</Link>
+              <Link  style={{color:'black',fontSize:'20px'}} href="/" >Commissions</Link>
             </li>
            
-            <li>
+            <li style={{marginBottom:'20px'}}>
              
-              <Link  style={{color:'black'}} href="/" >Workshop</Link>
+              <Link  style={{color:'black',fontSize:'20px'}} href="/educational" >Workshop</Link>
             </li>
+
             <li>
              
-             <Link  style={{color:'black'}} href="/about" >about</Link>
+             <Link  style={{color:'black',fontSize:'20px'}} href="/dailydose2025" >ongoing</Link>
            </li>
-           <li>
+            <li>
              
-             <Link  style={{color:'black'}} href="/about" >ongoing</Link>
+             <Link  style={{color:'black',fontSize:'20px'}} href="/about" >about</Link>
            </li>
+           
           </ul>
         )}
       </div>
@@ -173,28 +175,28 @@ const styles = {
   },
   linkHome: {
     display: 'block',
-    padding: '5px 0px',
+    padding: '5px 0px 0px',
     textDecoration: 'none',
     color: 'black',
     fontSize: '20px',
   },
   link: {
     display: 'block',
-    padding: '5px 20px',
+    padding: '5px 20px 0px',
     textDecoration: 'none',
     color: 'black',
     fontSize: '20px',
   },
   linkAbout: {
     display: 'block',
-    padding: '5px 0px',
+    padding: '5px 0px 0px 20px',
     textDecoration: 'none',
     color: 'black',
     fontSize: '20px',
   },
   activeLink: {
     display: 'block',
-    padding: '5px 20px ',
+    padding: '5px 20px 0px' ,
     textDecoration: 'none',
     color: 'black',
     fontSize: '20px',

@@ -14,6 +14,24 @@ export const GET_POSTS = gql`
   }
 `;
 
+export const GET_POSTSOrdine = gql`
+  query {
+ ordineDeiWorks{
+  id
+  works(first:100){
+    ... on Progetti{
+      nome
+      galleria(first:100){
+        url
+      }
+    }
+  }
+}
+}
+`;
+
+
+
 export const GET_POSTSAbout = gql`
 query {
   abouts {
