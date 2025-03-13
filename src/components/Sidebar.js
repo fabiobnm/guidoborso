@@ -44,7 +44,7 @@ const Sidebar = () => {
       <ul className='headerDesktop' >
         {/* Guido Borso a sinistra */}
         <li style={styles.left}>
-          <Link className='vociMenuHeader' href="/" style={router.pathname === '/' ? styles.linkHome : styles.linkHome}>
+          <Link className='vociMenuHeader' id='guidoBold' href="/" style={router.pathname === '/' ? styles.linkHome : styles.linkHome}>
             Guido Borso
           </Link>
         </li>

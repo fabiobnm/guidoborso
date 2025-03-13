@@ -14,25 +14,34 @@
   }
 }
 
+@font-face {
+  font-family: 'MyFont';
+  src:       url('/fonts/BastardoGrotesk-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MyFontBold';
+  src:       url('/fonts/BastardoGrotesk-Black.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   color: var(--foreground);
   background: white;
-  font-family: 'ACaslonPro-Regular';
+  font-family: 'MyFont';
 }
 
-
+#guidoBold{
+  font-family: 'MyFontBold';
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
 
-@font-face {
-  font-family: 'MyFont';
-  src:       url('/fonts/UfficioVF.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
 
 .carosOld{
 
