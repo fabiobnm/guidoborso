@@ -364,7 +364,7 @@ list-style-type: none;
 }
 .boxImageHome{
   height: auto;
-    margin: 20vh 0px 0px;
+    margin: 12vh 100px 0px;
     display: flex;
     transform: translateY(-50%);
 }

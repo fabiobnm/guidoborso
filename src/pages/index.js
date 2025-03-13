@@ -38,8 +38,8 @@ export default function Home() {
             src={cover.url}
             style={{
               position: 'fixed',
-              marginTop: `${index * 40}px`,
-              marginLeft: `${(index + 1) * 40}px`,
+              marginTop: `${index * 60}px`,
+              marginLeft: `${(index + 1) *60}px`,
               zIndex: zIndexes[cover.id] || index, // Se non è stato cliccato, mantiene l'ordine originale
               transition: 'z-index 0.2s ease-in-out',
               cursor: 'pointer',
