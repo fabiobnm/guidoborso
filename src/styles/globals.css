@@ -26,7 +26,12 @@
   font-weight: normal;
   font-style: normal;
 }
-
+@font-face {
+  font-family: 'MyFontThin';
+  src:       url('/fonts/BastardoGrotesk-Thin.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   color: var(--foreground);
   background: white;
