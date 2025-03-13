@@ -37,7 +37,7 @@ export default function Home() {
       width: '35vw',
       marginLeft:'30px',
       position: 'relative',
-     }}>{data.abouts[0].bio}</p>
+     }}> <div style={{width:'100%', color:'black',marginLeft:'45px'}} dangerouslySetInnerHTML={{ __html: data.abouts[0].biography.html }}></div></p>
          
     </div>
     <div style={{width:'50%', color:'black',margin:'45px'}} dangerouslySetInnerHTML={{ __html: data.abouts[0].cv.html }}></div>
