@@ -47,6 +47,8 @@ export const GET_POSTSAbout = gql`
 query {
   abouts {
     bio
+    cv{
+    html}
     immagine{
       url
     }

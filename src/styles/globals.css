@@ -369,6 +369,13 @@ list-style-type: none;
     transform: translateY(-50%);
 }
 
+.divCommissions{
+    display: flex;
+    margin-top: 20vh;
+    margin-left: 45px;
+    width: fit-content;
+}
+
 
 /* Media query per smartphone (max-width 768px) */
 @media only screen and (max-width: 768px) {

@@ -75,7 +75,7 @@ const Sidebar = () => {
         href="/educational"
         style={router.pathname === "/educational" ? styles.activeLink : styles.link}
       >
-        Workshop
+        Workshops
       </Link>
     </li>
    
