@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState , useEffect  } from 'react';
 import { useQuery } from '@apollo/client';
 import client from '../lib/apolloClient';
 import { GET_POSTS, GET_POSTSOrdine } from '../lib/queries';
@@ -19,6 +19,26 @@ export default function Home() {
     transform: isModalOpen ? 'scale(1)' : 'scale(0.8)',
     config: { tension: 300, friction: 25 },
   });
+
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (isModalOpen) {
+        if (event.key === 'ArrowRight') {
+          navigateCarousel(1); // Freccia destra -> avanti
+        } else if (event.key === 'ArrowLeft') {
+          navigateCarousel(-1); // Freccia sinistra -> indietro
+        } else if (event.key === 'Escape') {
+          closeModal(); // Esci dal modal con ESC
+        }
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [isModalOpen, currentImageIndex, currentGallery]);
+
 
   if (loading) return <p>Loading...</p>;
   if (error) {

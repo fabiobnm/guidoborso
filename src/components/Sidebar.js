@@ -63,7 +63,7 @@ const Sidebar = () => {
      
     >
       <Link className='vociMenuHeader'
-        href=""
+        href="/commissions"
         style={router.pathname === "/commissions" ? styles.activeLink : styles.link}
       >
         Commissions
@@ -119,7 +119,7 @@ const Sidebar = () => {
               <Link  style={{color:'black',fontSize:'20px'}} href="/works2">Works</Link>
             </li>
             <li>
-              <Link  style={{color:'black',fontSize:'20px'}} href="/" >Commissions</Link>
+              <Link  style={{color:'black',fontSize:'20px'}} href="/commissions" >Commissions</Link>
             </li>
            
             <li style={{marginBottom:'20px'}}>

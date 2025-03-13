@@ -30,6 +30,17 @@ export const GET_POSTSOrdine = gql`
 }
 `;
 
+export const GET_POSTSCommissions = gql`
+query {
+  commissions{
+    id
+    info
+    immagine{url}
+  }
+  }
+`;
+
+
 
 
 export const GET_POSTSAbout = gql`
