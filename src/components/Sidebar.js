@@ -80,14 +80,7 @@ const Sidebar = () => {
     </li>
    
         </div>
- <li>
-            <Link className='vociMenuHeader'
-              href="/dailydose2025"
-              style={ styles.link}
-            >
-              News
-            </Link>
-          </li>
+
         {/* About a destra */}
         <li style={styles.right}>
           <Link className='vociMenuHeader'
