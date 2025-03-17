@@ -2,6 +2,8 @@ import { useQuery } from '@apollo/client';
 import client from '../lib/apolloClient';
 import { GET_POSTSHome } from '../lib/queries';
 import Sidebar from '../components/Sidebar';
+import Draggable from 'react-draggable';
+
 
 export default function Home() {
   const { loading, error, data } = useQuery(GET_POSTSHome, { client });
@@ -24,7 +26,8 @@ export default function Home() {
     <main style={{ marginTop: '0px' }}>
       <div className="boxImageHome">
         {data.homePages[0].cover.map((cover, index) => (
-          <img
+         <Draggable>
+         <img
             className="imageHome"
             key={cover.id}
             src={cover.url}
@@ -38,6 +41,7 @@ export default function Home() {
               cursor: 'pointer',
             }}
           />
+          </Draggable>
         ))}
       </div>
 
