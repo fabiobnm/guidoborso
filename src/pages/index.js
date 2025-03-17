@@ -45,7 +45,7 @@ export default function Home() {
         ))}
       </div>
 
-      <img style={{ zIndex: 99, width: '110px', position: 'fixed', bottom: 0, left: '-50px' }} src='TARTA.png' />
+      <img style={{ zIndex: 99, width: '310px', position: 'fixed', bottom: 0, left: '-150px' }} src='TARTA.png' />
 
       <Sidebar />
     </main>
