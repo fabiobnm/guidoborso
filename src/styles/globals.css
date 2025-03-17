@@ -13,6 +13,10 @@
     --foreground: #ededed;
   }
 }
+::selection {
+  color: white;
+  background: var(--random-color, #ffa3d7); /* Colore di fallback */
+}
 
 @font-face {
   font-family: 'MyFont';
@@ -79,9 +83,11 @@ display: grid;
   gap: 10px;
 
 }
+/*
 .vociMenuHeader:hover{
   border-bottom: 1px solid black;
 }
+  */
 .dailydoseDiv{
  /* display: flex
 ; */
