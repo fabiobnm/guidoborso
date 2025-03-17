@@ -137,6 +137,12 @@ display: grid;
   height: 700px; /* Altezza della card */
 }
 
+.cardWorkshops{
+  perspective: 1000px; /* Necessario per l'effetto 3D */
+  width: 700px; /* Larghezza della card */
+  height: 700px; /* Altezza della card */
+}
+
 .dailyPost{
   height: auto;
   margin: 0px;
@@ -376,6 +382,13 @@ list-style-type: none;
     width: fit-content;
 }
 
+
+.textWorkshops{
+  color:black;
+  margin-left: 45px;
+  margin-top: 145px;
+  width: 50%;
+}
 
 /* Media query per smartphone (max-width 768px) */
 @media only screen and (max-width: 768px) {

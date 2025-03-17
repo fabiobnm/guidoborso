@@ -30,27 +30,17 @@ It’s an open approach that challenges traditional roles and values exchange, e
         {data.educationals.map((progetto) => (
            <div>
           
-          <div className="card" key={progetto.id}>
-            <div className="card-inner">
+          <div style={{marginTop:'50px'}} className="cardWorkshops" key={progetto.id}>
+            <div >
               {/* Lato frontale */}
-              <div className="card-front">
                 <img 
-                  style={{ height: '500px' }} 
+                  style={{ height: '400px' }} 
                   src={progetto.copertina.url} 
                   alt={progetto.nome} 
                 />
-              </div>
-              {/* Lato retro */}
-              <div className="card-back">
-                <img 
-                  style={{ height: '500px' }} 
-                  src={progetto.retro?.url} 
-                  alt={`Retro di ${progetto.nome}`} 
-                />
-              </div>
+             
             </div>
-            <h2>{progetto.nome}</h2>
-            <p>{progetto.info}</p>
+           
           </div>
           </div>
         ))}
