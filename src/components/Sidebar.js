@@ -94,7 +94,7 @@ const Sidebar = () => {
         <li style={styles.right}>
           <Link className='vociMenuHeader'
             href="/about"
-            style={router.pathname === '/about' ? styles.activeLink : styles.linkAbout}
+            style={router.pathname === '/about' ? styles.activeLinkAbout : styles.linkAbout}
           >
             About
           </Link>
@@ -204,7 +204,14 @@ const styles = {
     fontSize: '20px',
     borderBottom: '1px solid',
   },
-
+  activeLinkAbout: {
+    display: 'block',
+    padding: '5px 0px 0px 20px' ,
+    textDecoration: 'none',
+    color: 'black',
+    fontSize: '20px',
+    borderBottom: '1px solid',
+  },
  
 };
 

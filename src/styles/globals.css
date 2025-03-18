@@ -83,9 +83,11 @@ display: grid;
   gap: 10px;
 
 }
+/*
 .vociMenuHeader:hover{
   border-bottom: 1px solid black;
 }
+  */
 .dailydoseDiv{
  /* display: flex
 ; */
