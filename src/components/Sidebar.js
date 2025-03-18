@@ -10,16 +10,14 @@ const Sidebar = () => {
   const [hoverText2, setHoverText2] = useState("Workshop"); // Stato per gestire il testo
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // Stato per il menu mobile
 
-    // Funzione per generare un colore random
-    function getRandomColor() {
-      return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-    }
-  
-    // Imposta il colore random solo al primo montaggio
-    useEffect(() => {
-      document.documentElement.style.setProperty('--random-color', getRandomColor());
-    }, []);
+  function getRandomColor() {
+    return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+  }
 
+   // Imposta il colore random solo al primo montaggio
+   useEffect(() => {
+    document.documentElement.style.setProperty('--random-color', getRandomColor());
+  }, []);
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
@@ -212,6 +210,7 @@ const styles = {
     fontSize: '20px',
     borderBottom: '1px solid',
   },
+
  
 };
 

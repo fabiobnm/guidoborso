@@ -13,11 +13,11 @@
     --foreground: #ededed;
   }
 }
-
 ::selection {
   color: white;
   background: var(--random-color, #ffa3d7); /* Colore di fallback */
 }
+
 @font-face {
   font-family: 'MyFont';
   src:       url('/fonts/BastardoGrotesk-Regular.woff') format('woff');
