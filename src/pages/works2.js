@@ -20,7 +20,6 @@ export default function Home() {
     config: { tension: 300, friction: 25 },
   });
 
-
   useEffect(() => {
     const handleKeyDown = (event) => {
       if (isModalOpen) {

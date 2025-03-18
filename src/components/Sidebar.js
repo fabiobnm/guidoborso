@@ -10,14 +10,16 @@ const Sidebar = () => {
   const [hoverText2, setHoverText2] = useState("Workshop"); // Stato per gestire il testo
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // Stato per il menu mobile
 
-  function getRandomColor() {
-    return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-  }
+    // Funzione per generare un colore random
+    function getRandomColor() {
+      return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+    }
+  
+    // Imposta il colore random solo al primo montaggio
+    useEffect(() => {
+      document.documentElement.style.setProperty('--random-color', getRandomColor());
+    }, []);
 
-   // Imposta il colore random solo al primo montaggio
-   useEffect(() => {
-    document.documentElement.style.setProperty('--random-color', getRandomColor());
-  }, []);
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
@@ -92,7 +94,7 @@ const Sidebar = () => {
         <li style={styles.right}>
           <Link className='vociMenuHeader'
             href="/about"
-            style={router.pathname === '/about' ? styles.activeLinkAbout : styles.linkAbout}
+            style={router.pathname === '/about' ? styles.activeLink : styles.linkAbout}
           >
             About
           </Link>
@@ -197,14 +199,6 @@ const styles = {
   activeLink: {
     display: 'block',
     padding: '5px 20px 0px' ,
-    textDecoration: 'none',
-    color: 'black',
-    fontSize: '20px',
-    borderBottom: '1px solid',
-  },
-  activeLinkAbout: {
-    display: 'block',
-    padding: '5px 0px 0px 20px' ,
     textDecoration: 'none',
     color: 'black',
     fontSize: '20px',
